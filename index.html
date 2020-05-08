@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
+  <title>ESSENTIAL UI KIT</title>
+</head>
+<body class="pb-12 bg-gray-100" style="font-family: 'Source Sans Pro',sans-serif;">
+  <!-- navbar o menu -->
+  <nav>
+    <div class="container flex items-center justify-between px-6 py-2 mx-auto">
+      <a class="text-2xl font-bold lg:text-4xl" href="#">
+        Essential UI Kit
+      </a>
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 text-gray-500 border border-gray-600 rounded appearance-none hover:text-gray-800 hover:border-teal-500 focus:outline-none">
+          <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:block">
+        <ul class="inline-flex">
+          <li><a class="px-4 font-bold" href="/">Home</a></li>
+          <li><a class="px-4 hover:text-gray-800" href="#">About</a></li>
+          <li><a class="px-4 hover:text-gray-800" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="uikit" class="container mx-auto">
+    <section id="color_palette" class="px-4 py-2 mt-16 border">
+      <div class="text-2xl font-semibold uppercase">Color Palette</div>
+      <div class="flex justify-between">
+        <div id="primary" class="flex mt-4 mr-2">
+          <div>
+            <span class="block mb-2 text-xl font-semibold">Primary</span>
+            <div id="color_primary" class="flex mt-4">
+              <div class="z-30 w-16 h-16 mt-0 ml-0 rounded-full bg-primary-300"></div>
+              <div class="z-40 w-16 h-16 -ml-4 rounded-full bg-primary-200"></div>
+              <div class="z-50 w-16 h-16 -ml-4 rounded-full bg-primary-100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="primary" class="flex mx-2 mt-4">
+          <div>
+            <span class="block mb-2 text-xl font-semibold">Secundary</span>
+            <div id="color_primary" class="flex mt-4">
+              <div class="z-30 w-16 h-16 mt-0 ml-0 rounded-full bg-secondary-200"></div>
+              <div class="z-40 w-16 h-16 -ml-4 rounded-full bg-secondary-100"></div>
+            </div>
+          </div>
+        </div>
+        <div id="primary" class="flex mx-2 mt-4">
+          <div>
+            <span class="block mb-2 text-xl font-semibold">Accent</span>
+            <div id="color_primary" class="flex mt-4">
+              <div class="z-30 w-16 h-16 mt-0 ml-0 rounded-full bg-accent-200"></div>
+              <div class="z-40 w-16 h-16 -ml-4 rounded-full bg-accent-100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="primary" class="flex mx-2 mt-4">
+          <div>
+            <span class="block mb-2 text-xl font-semibold">Dark tones</span>
+            <div id="color_primary" class="flex mt-4">
+              <div class="z-30 w-16 h-16 mt-0 ml-0 rounded-full bg-darktone-200"></div>
+              <div class="z-40 w-16 h-16 -ml-4 rounded-full bg-darktone-100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="buttons">
+      <div class="text-2xl font-semibold uppercase">Buttons</div>
+      <div class="flex flex-wrap justify-between">
+        <div id="primary_block" class="mt-4 mr-2">
+          <span class="block mb-2 text-xl font-semibold">Primary buttons</span>
+          <div>
+            
+            <div id="primary_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm text-white rounded bg-primary-300 hover:bg-primary-200" >
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0L10 5.197 8.864 4.155c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246L10 17l7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"/></svg>
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 mx-2 text-sm text-white rounded bg-secondary-200 hover:bg-secondary-100" >
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0L10 5.197 8.864 4.155c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246L10 17l7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"/></svg>
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 text-sm text-white rounded bg-accent-200 hover:bg-accent-100" >
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0L10 5.197 8.864 4.155c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246L10 17l7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"/></svg>
+                <span>Large button</span>
+              </button>
+            </div>
+
+            <div id="primary_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm text-white rounded bg-primary-300 hover:bg-primary-200 focus:bg-primary-100">
+                <span>Large button</span>
+                <svg class="w-4 h-4 ml-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 mx-2 text-sm text-white rounded bg-secondary-200 hover:bg-secondary-100" >
+                <span>Large button</span>
+                <svg class="w-4 h-4 ml-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 text-sm text-white rounded bg-accent-200 hover:bg-accent-100" >
+                <span>Large button</span>
+                <svg class="w-4 h-4 ml-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+              </button>
+            </div>
+
+            <div id="primary_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm text-white rounded bg-primary-300 hover:bg-primary-200 focus:bg-primary-100">
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 mx-2 text-sm text-white rounded bg-secondary-200 hover:bg-secondary-100" >
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 text-sm text-white rounded bg-accent-200 hover:bg-accent-100" >
+                <span>Large button</span>
+              </button>
+            </div>            
+
+
+          </div>
+
+
+        </div>
+
+        <div id="secondary_block" class="mt-4 mr-2">
+          <span class="block mb-2 text-xl font-semibold">Secondary buttons</span>
+          <div>
+            
+            <div id="primary_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-solid rounded text-primary-200 border-primary-200 hover:bg-primary-200 hover:text-white" >
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0L10 5.197 8.864 4.155c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246L10 17l7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"/></svg>
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 mx-2 text-sm border-2 border-solid rounded text-secondary-200 border-secondary-200 hover:bg-secondary-200 hover:text-white" >
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0L10 5.197 8.864 4.155c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246L10 17l7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"/></svg>
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-solid rounded text-accent-200 border-accent-200 hover:bg-accent-200 hover:text-white">
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0L10 5.197 8.864 4.155c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246L10 17l7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"/></svg>
+                <span>Large button</span>
+              </button>
+            </div>
+
+            <div id="primary_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-solid rounded text-primary-200 border-primary-200 hover:bg-primary-200 hover:text-white" >
+                <span>Large button</span>
+                <svg class="w-4 h-4 ml-2 fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.163 4.516c.418.408 4.502 4.695 4.502 4.695a1.095 1.095 0 0 1 0 1.576s-4.084 4.289-4.502 4.695c-.418.408-1.17.436-1.615 0-.446-.434-.481-1.041 0-1.574L11.295 10 7.548 6.092c-.481-.533-.446-1.141 0-1.576.445-.436 1.197-.409 1.615 0z"/></svg>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 mx-2 text-sm border-2 border-solid rounded text-secondary-200 border-secondary-200 hover:bg-secondary-200 hover:text-white" >
+                <span>Large button</span>
+                <svg class="w-4 h-4 ml-2 fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.163 4.516c.418.408 4.502 4.695 4.502 4.695a1.095 1.095 0 0 1 0 1.576s-4.084 4.289-4.502 4.695c-.418.408-1.17.436-1.615 0-.446-.434-.481-1.041 0-1.574L11.295 10 7.548 6.092c-.481-.533-.446-1.141 0-1.576.445-.436 1.197-.409 1.615 0z"/></svg>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-solid rounded text-accent-200 border-accent-200 hover:bg-accent-200 hover:text-white" >
+                <span>Large button</span>
+                <svg class="w-4 h-4 ml-2 fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.163 4.516c.418.408 4.502 4.695 4.502 4.695a1.095 1.095 0 0 1 0 1.576s-4.084 4.289-4.502 4.695c-.418.408-1.17.436-1.615 0-.446-.434-.481-1.041 0-1.574L11.295 10 7.548 6.092c-.481-.533-.446-1.141 0-1.576.445-.436 1.197-.409 1.615 0z"/></svg>
+              </button>
+            </div>
+
+            <div id="text_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-solid rounded text-primary-200 border-primary-200" >
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 mx-2 text-sm border-2 border-solid rounded text-secondary-200 border-secondary-200" >
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-solid rounded text-accent-200 border-accent-200" >
+                <span>Large button</span>
+              </button>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div id="text_block" class="mt-4 mr-2">
+          <span class="block mb-2 text-xl font-semibold">Text buttons</span>
+          <div>
+            
+            <div id="text_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-solid rounded text-primary-200 hover:border-primary-300" >
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0L10 5.197 8.864 4.155c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246L10 17l7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"/></svg>
+                <span>Large button</span>                
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 mx-2 text-sm border-2 border-solid rounded text-secondary-200 hover:border-secondary-200">
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0L10 5.197 8.864 4.155c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246L10 17l7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"/></svg>
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-solid rounded text-accent-200 hover:border-accent-200" >
+                <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.19 4.155c-1.672-1.534-4.383-1.534-6.055 0L10 5.197 8.864 4.155c-1.672-1.534-4.382-1.534-6.054 0-1.881 1.727-1.881 4.52 0 6.246L10 17l7.19-6.599c1.88-1.726 1.88-4.52 0-6.246z"/></svg>
+                <span>Large button</span>
+              </button>
+            </div>
+
+            <div id="primary_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-transparent border-solid rounded text-primary-200 hover:border-primary-200" >
+                <span>Large button</span>
+                <svg class="w-4 h-4 ml-2 fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.163 4.516c.418.408 4.502 4.695 4.502 4.695a1.095 1.095 0 0 1 0 1.576s-4.084 4.289-4.502 4.695c-.418.408-1.17.436-1.615 0-.446-.434-.481-1.041 0-1.574L11.295 10 7.548 6.092c-.481-.533-.446-1.141 0-1.576.445-.436 1.197-.409 1.615 0z"/></svg>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 mx-2 text-sm border-2 border-transparent border-solid rounded text-secondary-200 hover:border-secondary-200" >
+                <span>Large button</span>
+                <svg class="w-4 h-4 ml-2 fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.163 4.516c.418.408 4.502 4.695 4.502 4.695a1.095 1.095 0 0 1 0 1.576s-4.084 4.289-4.502 4.695c-.418.408-1.17.436-1.615 0-.446-.434-.481-1.041 0-1.574L11.295 10 7.548 6.092c-.481-.533-.446-1.141 0-1.576.445-.436 1.197-.409 1.615 0z"/></svg>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-transparent border-solid rounded text-accent-200 hover:border-accent-200" >
+                <span>Large button</span>
+                <svg class="w-4 h-4 ml-2 fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.163 4.516c.418.408 4.502 4.695 4.502 4.695a1.095 1.095 0 0 1 0 1.576s-4.084 4.289-4.502 4.695c-.418.408-1.17.436-1.615 0-.446-.434-.481-1.041 0-1.574L11.295 10 7.548 6.092c-.481-.533-.446-1.141 0-1.576.445-.436 1.197-.409 1.615 0z"/></svg>
+              </button>
+            </div>
+
+            <div id="text_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-transparent border-solid rounded text-primary-200 hover:border-primary-200" >
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 mx-2 text-sm border-2 border-transparent border-solid rounded text-secondary-200 hover:border-secondary-200" >
+                <span>Large button</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 text-sm border-2 border-transparent border-solid rounded text-accent-200 hover:border-accent-200" >
+                <span>Large button</span>
+              </button>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div id="stepper_block" class="mt-4 mr-2">
+          <span class="block mb-2 text-xl font-semibold">Steppers</span>
+          <div id="text_buttons" class="flex mt-4">
+            <button class="inline-flex items-center px-1 py-1 text-sm text-white rounded bg-primary-300 hover:bg-primary-100" >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 10c0 .553-.048 1-.601 1H11v4.399c0 .552-.447.601-1 .601-.553 0-1-.049-1-.601V11H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H9V4.601C9 4.048 9.447 4 10 4c.553 0 1 .048 1 .601V9h4.399c.553 0 .601.447.601 1z"/></svg>
+            </button>
+
+            <button class="inline-flex items-center px-1 py-1 mx-2 text-sm text-white rounded bg-primary-300 hover:bg-primary-100" >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 10c0 .553-.048 1-.601 1H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H15.4c.552 0 .6.447.6 1z"/></svg>
+            </button>
+            
+            <button class="inline-flex items-center px-1 py-1 ml-2 text-sm border-2 border-solid rounded-l-lg text-primary-300 border-primary-300 hover:bg-primary-300 hover:text-white" >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 10c0 .553-.048 1-.601 1H11v4.399c0 .552-.447.601-1 .601-.553 0-1-.049-1-.601V11H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H9V4.601C9 4.048 9.447 4 10 4c.553 0 1 .048 1 .601V9h4.399c.553 0 .601.447.601 1z"/></svg>
+            </button>
+            <button class="inline-flex items-center px-1 py-1 mr-2 text-sm border-2 border-solid rounded-r-lg text-primary-300 border-primary-300 hover:bg-primary-300 hover:text-white" >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 10c0 .553-.048 1-.601 1H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H15.4c.552 0 .6.447.6 1z"/></svg>
+            </button>
+
+            <button class="items-center px-1 py-1 ml-2 text-sm text-white border-t-2 border-b-2 border-l-2 border-solid rounded-l-lg bg-primary-300 border-primary-300 hover:bg-primary-200" >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 10c0 .553-.048 1-.601 1H11v4.399c0 .552-.447.601-1 .601-.553 0-1-.049-1-.601V11H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H9V4.601C9 4.048 9.447 4 10 4c.553 0 1 .048 1 .601V9h4.399c.553 0 .601.447.601 1z"/></svg>
+            </button>
+            <input type="text" class="w-10 h-8 px-2 py-0 text-sm font-medium text-center bg-white border-2 border-solid border-primary-300 text-primary-300"/>
+            <button class="items-center px-1 py-1 mr-2 text-sm text-white border-l-2 border-solid rounded-r-lg bg-primary-300 border-primary-300 hover:bg-primary-200 " >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 10c0 .553-.048 1-.601 1H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H15.4c.552 0 .6.447.6 1z"/></svg>
+            </button>
+
+            <label class="w-16 h-8 py-1 text-sm font-medium text-center bg-white border-2 border-solid rounded-l-lg px-l border-primary-300 text-primary-300">Add</label>
+            <button class="items-center px-1 py-1 mr-2 text-sm text-white border-l-2 border-solid rounded-r-lg bg-primary-300 border-primary-300 hover:bg-primary-200 " >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 10c0 .553-.048 1-.601 1H11v4.399c0 .552-.447.601-1 .601-.553 0-1-.049-1-.601V11H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H9V4.601C9 4.048 9.447 4 10 4c.553 0 1 .048 1 .601V9h4.399c.553 0 .601.447.601 1z"/></svg>
+            </button>
+
+
+
+
+          </div>
+        </div>
+
+        <div id="iconsonly_block" class="mt-4 mr-2">
+          <span class="block mb-2 text-xl font-semibold">Icons Only</span>
+          <div id="text_buttons" class="flex mt-4">
+            <button class="inline-flex items-center px-1 py-1 mr-2 text-sm text-white rounded-full bg-primary-300 hover:bg-primary-100" >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 10c0 .553-.048 1-.601 1H11v4.399c0 .552-.447.601-1 .601-.553 0-1-.049-1-.601V11H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H9V4.601C9 4.048 9.447 4 10 4c.553 0 1 .048 1 .601V9h4.399c.553 0 .601.447.601 1z"/></svg>
+            </button>
+
+            <button class="inline-flex items-center px-1 py-1 mx-2 text-sm text-white rounded-full bg-primary-300 hover:bg-primary-100" >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 10c0 .553-.048 1-.601 1H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H15.4c.552 0 .6.447.6 1z"/></svg>
+            </button>
+
+            <button class="inline-flex items-center px-1 py-1 mx-2 text-sm text-white rounded-full bg-primary-300 hover:bg-primary-100" >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13.25 10L6.109 2.58a.697.697 0 0 1 0-.979.68.68 0 0 1 .969 0l7.83 7.908a.697.697 0 0 1 0 .979l-7.83 7.908a.68.68 0 0 1-.969 0 .697.697 0 0 1 0-.979L13.25 10z"/></svg>
+            </button>
+
+            <button class="inline-flex items-center px-1 py-1 mx-2 text-sm text-white rounded-full bg-primary-300 hover:bg-primary-100" >
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18.121 3.271c-.295-.256-1.906-1.731-2.207-1.991-.299-.259-.756-.28-1.102-.28H5.188c-.345 0-.802.021-1.102.28-.301.26-1.912 1.736-2.207 1.991-.297.256-.543.643-.464 1.192.079.551 1.89 13.661 1.937 13.973A.67.67 0 0 0 4 19h12a.67.67 0 0 0 .648-.565c.047-.311 1.858-13.422 1.938-13.973.078-.548-.168-.935-.465-1.191zM10 11.973c-3.248 0-3.943-4.596-4.087-5.543H7.75c.276 1.381.904 3.744 2.25 3.744s1.975-2.363 2.25-3.744h1.838c-.145.947-.84 5.543-4.088 5.543zM3.17 4.006L5 2h10l1.83 2.006H3.17z"/></svg>
+            </button>
+
+
+
+          </div>
+        </div>
+
+        <div id="primary_block" class="mt-4 mr-2">
+          <span class="block mb-2 text-xl font-semibold">Button group</span>
+          <div>
+            
+            <div id="primary_buttons" class="flex mt-4">
+              <button class="inline-flex items-center px-2 py-1 text-sm border border-solid rounded border-primary-300 text-primary-300 hover:bg-primary-300 hover:text-white focus:bg-primary-300 focus:text-white" >
+                <span>Secondary</span>
+              </button>
+
+              <button class="inline-flex items-center px-2 py-1 ml-2 text-sm border border-solid rounded border-primary-300 text-primary-300 hover:bg-primary-300 hover:text-white focus:bg-primary-300 focus:text-white" >
+                <span>Primary</span>
+              </button>
+
+              <label class="w-16 h-8 ml-8 mr-2 text-2xl font-bold text-center bg-white text-primary-300">$250</label>
+              <button class="flex items-center w-24 px-1 py-1 mr-2 text-sm text-white border-l-2 border-solid rounded-r-lg bg-primary-300 border-primary-300 hover:bg-primary-200 " >
+                <span>Buy now</span>
+                <svg class="w-5 h-5 ml-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13.25 10L6.109 2.58a.697.697 0 0 1 0-.979.68.68 0 0 1 .969 0l7.83 7.908a.697.697 0 0 1 0 .979l-7.83 7.908a.68.68 0 0 1-.969 0 .697.697 0 0 1 0-.979L13.25 10z"/></svg>
+              </button>
+
+            </div>
+
+          </div>
+
+
+        </div>        
+
+      </div>
+    </section>
+
+    <div id="form_componet" class="mt-16 ">
+      <div class="text-2xl font-semibold uppercase">Form component</div>
+      <div class="flex justify-between">
+        <div id="primary" class="flex mt-4 mr-2">
+          <div>
+            <span class="block mb-2 text-xl font-semibold">Input box</span>
+            <div id="color_primary" class="flex flex-col mt-4">
+              
+              <div class="relative inline-block w-56 h-8 mt-4">
+                <div class="absolute inset-y-0 left-0 flex items-center px-2 text-gray-500 bg-transparent rounded-l pointer-events-none bg-white-300">
+                  <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.545 15.467l-3.779-3.779a6.15 6.15 0 0 0 .898-3.21c0-3.417-2.961-6.377-6.378-6.377A6.185 6.185 0 0 0 2.1 8.287c0 3.416 2.961 6.377 6.377 6.377a6.15 6.15 0 0 0 3.115-.844l3.799 3.801a.953.953 0 0 0 1.346 0l.943-.943c.371-.371.236-.84-.135-1.211zM4.004 8.287a4.282 4.282 0 0 1 4.282-4.283c2.366 0 4.474 2.107 4.474 4.474a4.284 4.284 0 0 1-4.283 4.283c-2.366-.001-4.473-2.109-4.473-4.474z"/></svg>
+                </div>
+                <input type="text" class="block w-full h-8 py-1 pl-10 leading-tight bg-white border rounded appearance-none focus:outline-none focus:shadow-outline" placeholder="Search field">                
+              </div>    
+
+              <div class="relative inline-block w-56 h-8 mt-4">
+                <div class="absolute inset-y-0 left-0 flex items-center px-2 text-gray-500 bg-transparent rounded-l pointer-events-none">
+                  <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.545 15.467l-3.779-3.779a6.15 6.15 0 0 0 .898-3.21c0-3.417-2.961-6.377-6.378-6.377A6.185 6.185 0 0 0 2.1 8.287c0 3.416 2.961 6.377 6.377 6.377a6.15 6.15 0 0 0 3.115-.844l3.799 3.801a.953.953 0 0 0 1.346 0l.943-.943c.371-.371.236-.84-.135-1.211zM4.004 8.287a4.282 4.282 0 0 1 4.282-4.283c2.366 0 4.474 2.107 4.474 4.474a4.284 4.284 0 0 1-4.283 4.283c-2.366-.001-4.473-2.109-4.473-4.474z"/></svg>
+                </div>
+                <input type="text" class="block w-full h-8 py-1 pl-10 leading-tight bg-gray-300 border rounded appearance-none focus:outline-none focus:shadow-outline" placeholder="Search field">                
+              </div>              
+              
+
+              <div class="relative inline-block w-56 h-8 mt-4">
+                <select class="block w-full h-8 px-2 py-1 leading-tight bg-white border rounded appearance-none border-primary-300 hover:border-primary-200 focus:outline-none focus:shadow-outline">
+                  <option>Really long option that will likely overlap the chevron</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 flex items-center px-2 text-white rounded-r pointer-events-none bg-primary-300 hover:bg-primary-200">
+                  <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                </div>
+              </div>              
+              
+
+
+            </div>
+          </div>
+
+        
+        </div>
+
+          <div>
+            <span class="block mb-2 text-xl font-semibold">Toggle</span>
+            <div id="color_primary" class="flex mt-4">
+
+              <div class="flex items-center justify-center w-full mb-24">
+                
+                <!-- Toggle Button -->
+                <label 
+                  for="toogleA"
+                  class="flex items-center cursor-pointer"
+                >
+                  <!-- toggle -->
+                  <div class="relative">
+                    <!-- input -->
+                    <input id="toogleA" type="checkbox" class="hidden" />
+                    <!-- line -->
+                    <div
+                      class="w-10 h-4 bg-gray-400 rounded-full shadow-inner toggle__line"
+                    ></div>
+                    <!-- dot -->
+                    <div
+                      class="absolute inset-y-0 left-0 w-6 h-6 bg-white rounded-full shadow toggle__dot"
+                    ></div>
+                  </div>
+                  <!-- label -->
+                  <div
+                    class="ml-3 font-medium text-gray-700"
+                  >
+                    Toggle Me!
+                  </div>
+                </label>
+                
+              </div>
+
+              <!-- <div class="relative px-4 py-3 text-sm text-center text-gray-600 bg-gray-400 rounded">
+                Admittedly, there is a litte bit of additional CSS, but not much 😅
+              </div>               -->
+
+            </div>
+          </div>  
+
+      </div>
+    </div>   
+
+
+
+  </div>
+  
+</body>
+</html>

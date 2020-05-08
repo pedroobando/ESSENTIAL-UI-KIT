@@ -1,0 +1,268 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+:root {
+  --primary-100: #98B8FA;
+  --primary-200: #3978F8;
+  --primary-300: #1B56D0;
+  
+  --secondary-100: #DCF7FC;
+  --secondary-200: #2EBDD8;
+  
+  --accent-100: #A383F2;
+  --accent-200: #6A42D2;
+  
+  --darktone-100: #202543;
+  --darktone-200: #151725;
+
+  --linear-grand: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradante {
+  background: var(--linear-grand);
+}
+
+
+.toggle__dot {
+  top: -.25rem;
+  left: -.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked ~ .toggle__dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
+}
+
+/* Colores del fondo o background */
+
+.bg-primary-300 {
+  background-color: var(--primary-300);
+}
+
+.bg-primary-200 {
+  background-color: var(--primary-200);
+}
+
+.bg-primary-100 {
+  background-color: var(--primary-100);
+}
+
+.bg-secondary-100 {
+  background-color: var(--secondary-100);
+}
+
+.bg-secondary-200 {
+  background-color: var(--secondary-200);
+}
+
+.bg-accent-100 {
+  background-color: var(--accent-100);
+}
+
+.bg-accent-200 {
+  background-color: var(--accent-200);
+}
+
+.bg-darktone-100 {
+  background-color: var(--darktone-100);
+}
+
+.bg-darktone-200 {
+  background-color: var(--darktone-200);
+}
+
+/* Hover: => Colores del fondo o background */
+
+.hover\:bg-primary-300:hover {
+  background-color: var(--primary-300);
+}
+
+.hover\:bg-primary-200:hover {
+  background-color: var(--primary-200);
+}
+
+.hover\:bg-primary-100:hover {
+  background-color: var(--primary-100);
+}
+
+.hover\:bg-secondary-100:hover {
+  background-color: var(--secondary-100);
+}
+
+.hover\:bg-secondary-200:hover {
+  background-color: var(--secondary-200);
+}
+
+.hover\:bg-accent-100:hover {
+  background-color: var(--accent-100);
+}
+
+.hover\:bg-accent-200:hover {
+  background-color: var(--accent-200);
+}
+
+.hover\:bg-darktone-100:hover {
+  background-color: var(--darktone-100);
+}
+
+.hover\:bg-darktone-200 {
+  background-color: var(--darktone-200);
+}
+
+/* focus: => Colores del fondo o background */
+
+.focus\:bg-primary-300:focus {
+  background-color: var(--primary-300);
+}
+
+.focus\:bg-primary-200:focus {
+  background-color: var(--primary-200);
+}
+
+.focus\:bg-primary-100:focus {
+  background-color: var(--primary-100);
+}
+
+.focus\:bg-secondary-100:focus {
+  background-color: var(--secondary-100);
+}
+
+.focus\:bg-secondary-200:focus {
+  background-color: var(--secondary-200);
+}
+
+.focus\:bg-accent-100:focus {
+  background-color: var(--accent-100);
+}
+
+.focus\:bg-accent-200:focus {
+  background-color: var(--accent-200);
+}
+
+.focus\:bg-darktone-100:focus {
+  background-color: var(--darktone-100);
+}
+
+.focus\:bg-darktone-200 {
+  background-color: var(--darktone-200);
+}
+
+
+/* Colores del Texto */
+
+.text-primary-300 {  
+  color: var(--primary-300);
+}
+
+.text-primary-200 {
+  color: var(--primary-200);
+}
+
+.text-primary-100 {
+  color: var(--primary-100);
+}
+
+.text-secondary-100 {
+  color: var(--secondary-100);
+}
+
+.text-secondary-200 {
+  color: var(--secondary-200);
+}
+
+.text-accent-100 {
+  color: var(--accent-100);
+}
+
+.text-accent-200 {
+  color: var(--accent-200);
+}
+
+.text-darktone-100 {
+  color: var(--darktone-100);
+}
+
+.text-darktone-200 {
+  color: var(--darktone-200);
+}
+
+/* Colores de los bordes */
+
+.border-primary-300 {
+  border-color: var(--primary-300);
+}
+
+.border-primary-200 {
+  border-color: var(--primary-200);
+}
+
+.border-primary-100 {
+  border-color: var(--primary-100);
+}
+
+.border-secondary-100 {
+  border-color: var(--secondary-100);
+}
+
+.border-secondary-200 {
+  border-color: var(--secondary-200);
+}
+
+.border-accent-100 {
+  border-color: var(--accent-100);
+}
+
+.border-accent-200 {
+  border-color: var(--accent-200);
+}
+
+.border-darktone-100 {
+  border-color: var(--darktone-100);
+}
+
+.border-darktone-200 {
+  border-color: var(--darktone-200);
+}
+
+/* section hover border */
+
+.hover\:border-primary-300:hover {
+  border-color: var(--primary-300);
+}
+
+.hover\:border-primary-200:hover {
+  border-color: var(--primary-200);
+}
+
+.hover\:border-primary-100:hover {
+  border-color: var(--primary-100);
+}
+
+.hover\:border-secondary-100:hover {
+  border-color: var(--secondary-100);
+}
+
+.hover\:border-secondary-200:hover {
+  border-color: var(--secondary-200);
+}
+
+.hover\:border-accent-100:hover {
+  border-color: var(--accent-100);
+}
+
+.hover\:border-accent-200:hover {
+  border-color: var(--accent-200);
+}
+
+.hover\:border-darktone-100:hover {
+  border-color: var(--darktone-100);
+}
+
+.hover\:border-darktone-200:hover {
+  border-color: var(--darktone-200);
+}
