@@ -6,13 +6,18 @@ El amigo Victor UX/UI @victoruxui, creo un sencillo user interface para nuestros
 
 ## Repositorio UI Kit
 ```bash
-  https://xd.adobe.com/view/0aaa347e-df47-424d-5329-72fa833ae47d-7c9b/
+  [adobe.com/UIKit](https://xd.adobe.com/view/0aaa347e-df47-424d-5329-72fa833ae47d-7c9b)  
 ```
 
 ## Twitter
 ```bash
   Victor UX/UI @victoruxui
   Pedro @obando71
+```
+
+## Vista previa
+```bash
+  ![GitHub Logo](UIKit.png)
 ```
 
 ## Estatus Actual
