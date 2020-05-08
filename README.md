@@ -17,7 +17,7 @@ El amigo Victor UX/UI @victoruxui, creo un sencillo user interface para nuestros
 
 ## Vista previa
 ```bash
-  ![GitHub Logo](UIKit.png)
+  ![GitHub Logo](https://github.com/pedroobando/ESSENTIAL-UI-KIT/blob/master/UIKit.png)
 ```
 
 ## Estatus Actual
