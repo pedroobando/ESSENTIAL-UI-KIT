@@ -17,10 +17,7 @@ El amigo Victor UX/UI @victoruxui, creo un sencillo user interface para nuestros
 
 ## Estatus Actual
 ```bash
-  Sin terminar, fantando los:
-  - Los componentes
-  - Tipos de Fuente
-  - Card o Tarjetas
+  Terminado
 ```
 
 License
