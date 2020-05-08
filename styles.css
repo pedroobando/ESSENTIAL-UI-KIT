@@ -33,9 +33,17 @@
   transition: all 0.3s ease-in-out;
 }
 
+input:checked + svg {
+  display: block;
+}
+
+input:checked ~ .check_box {
+  background-color: var(--primary-300);
+}
+
 input:checked ~ .toggle__dot {
   transform: translateX(100%);
-  background-color: #48bb78;
+  background-color: var(--primary-300);
 }
 
 /* Colores del fondo o background */
